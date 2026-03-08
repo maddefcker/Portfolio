@@ -1,0 +1,46 @@
+/*start*/
+.desktop{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(https://sadhost.neocities.org/images/tiles/stars5.gif);
+    position: relative;
+    overflow: hidden;
+}
+
+/*desktop icons*/
+.icon-container{
+    width: 80px;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top:40px;
+    left:20px;
+}
+
+.icon-container img{
+    width: 48px; 
+}
+
+/*fönster/flikar*/
+.window-container{
+    position: absolute;
+    top: 120px;
+    left: 200px;
+    width: 320px;
+    background-color: #ECE9D8;
+    border: 2px solid #000;
+}
+
+/*title*/
+.titlebar{
+    background-color: linear-gradient(#0a246a, #3a6ea5);
+    color: white;
+    padding: 4px;
+    font-weight: bold;
+}
+
+/*content/innehåll*/
+.content-container{
+
+}
+        
