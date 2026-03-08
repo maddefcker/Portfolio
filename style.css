@@ -7,12 +7,13 @@
     overflow: hidden;
 }
 
-/* .icon-container,
+/*fönster/flikar/window*/
+.icon-container,
 .window-container,
 .content-container{
     position: absolute;
     inset: 0;
-} */
+} 
 
 /*desktop icons*/
 .icon-container{
@@ -54,6 +55,7 @@
     display: none;
 }
 
+
 /*title*/
 .titlebar{
     background-color: linear-gradient(#0a246a, #3a6ea5);
@@ -66,24 +68,10 @@
 }
 
 /*content/innehåll*/
-/* .content-container{
-
-} */
-
-/*Meny*/
-.start-menu{
-    position: fixed;
-    bottom: 0;
-    left: 0;
-
-    height: 40px;
-    width: 100%;
-
-    background: white;
-
-    display: flex;
-    align-items: center;
-}
+ .content-container{
+    color: black;
+    border: 2px solid white;
+} 
 
 /*navigation*/
 .navbar{
@@ -101,10 +89,30 @@
 
 }
 
+/*Meny*/
+.start-menu{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    height: 40px;
+    width: 100%;
+
+    background: white;
+
+    display: flex;
+    align-items: center;
+}
+
 .sticker{
     position: absolute;
     width: 80px;
     cursor: grab;
+}
+
+/*för att gömma flik/window*/
+.hide{
+    display: none !important; /*skriver över allt/prioriteras*/
 }
 
 
