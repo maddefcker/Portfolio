@@ -77,7 +77,7 @@
 
 }
 
-/*content/innehåll*/
+
 /*about me*/
  .content-container{
     color: black;
@@ -126,17 +126,23 @@
 } 
 
 /*contact*/
-.content-container #contact{
-
-
-    #contact{
+.content-container{
+    #contactImg{
         border: 2px solid black;
-        height: 40%;
-        width: 40%;
+        height: 10%;
+        width: 10%;
         object-fit: cover;
     }
 
     h1{
+        text-align: center;
+    }
+}
+
+/*projects*/
+.content-container{
+    projectText{
+        text-align: center;
         font-family: "Press Start 2P", system-ui;
     }
 }

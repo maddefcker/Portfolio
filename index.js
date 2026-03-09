@@ -1,5 +1,4 @@
 //GAMMAL -för att öppna flik/window
-
 // const iconImage = document.querySelector(".icon-container img");
 // const windowElement = document.querySelector(".window-container");
 
@@ -20,8 +19,15 @@ function openWindow(iconId, windowId){
 
 //kalla på funkctionen
 openWindow("iconContact","contact");
-openWindow("iconAbout","about")
+openWindow("iconAbout","about");
+openWindow("iconProj","projects");
 
+
+//fönster ej skapade ännu, lägg till senare
+
+// openWindow("iconMail","mail");
+// openWindow("iconRef","references");
+// openWindow("iconCV","cv");
 
 
 //funktion för att stänga flik/window
