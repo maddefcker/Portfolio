@@ -21,11 +21,10 @@ function openWindow(iconId, windowId){
 openWindow("iconContact","contact");
 openWindow("iconAbout","about");
 openWindow("iconProj","projects");
-
+openWindow("iconMail","mail");
 
 //fönster ej skapade ännu, lägg till senare
 
-// openWindow("iconMail","mail");
 // openWindow("iconRef","references");
 // openWindow("iconCV","cv");
 

@@ -28,8 +28,8 @@
             <img src="icons/star.png"alt="projects" id="iconProj">
             <p>Projects</p>
 
-            <img src="icons/contact.png"alt="ex">
-            <p>Exempel</p>
+            <img src="icons/contact.png"alt="mail"id="iconMail">
+            <p>Mail</p>
 
             <img src="icons/star.png"alt="ex">
             <p>Exempel 1</p>
@@ -93,6 +93,24 @@
             </div>
         </div>
 
+        <!--Mail-form-->
+        <div class="window-container"id="mail">
+            <div class="titlebar">
+                Mail
+                <button class="close">X</button>
+            </div>
+            <div class="content-container">
+                <mailText>
+                    <h1>Send me an email!</h1>
+                </mailText>
+                <form action="https://formsubmit.co/madeleine.karlsson99@gmail.com"method="POST">
+                    <input type="text"id="fname"name="name"placeholder="Firstname"required>
+                    <input type="email"id="email"email="email"placeholder="Email"required>
+                    <textarea id="message" id="message" name="message" rows="5"cols="50"required>Your message here...</textarea>
+                </form>
+            </div>
+
+        </div>
         
 
 

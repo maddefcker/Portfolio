@@ -142,8 +142,22 @@
 /*projects*/
 .content-container{
     projectText{
+        font-size: 2.3rem;
         text-align: center;
         font-family: "Press Start 2P", system-ui;
+    }
+}
+
+/*Mail-form*/
+.content-container{
+    form{
+        
+    }
+
+    h1{
+        font-size: 1.4rem;
+        font-family: "Press Start 2P", system-ui;
+        text-align: center;
     }
 }
 
