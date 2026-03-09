@@ -30,6 +30,7 @@
     width: 48px; 
 }
 
+/*desktop icons rad 2*/
 .icon-container1{
     width: 80px;
     text-align: center;
@@ -53,12 +54,10 @@
     height: 700px;
     background-color: #ECE9D8;
     border: 2px solid #000;
-
     display: none;    
 }
 
-
-/*window title*/
+/*window border w title*/
 .titlebar{
     background-color: pink;
     /* background-color: linear-gradient(#0a246a, #3a6ea5); */
@@ -79,6 +78,7 @@
 }
 
 /*content/innehåll*/
+/*about me*/
  .content-container{
     color: black;
     border: 2px solid white;
@@ -124,6 +124,23 @@
         font-size: 1rem;
     }
 } 
+
+/*contact*/
+.content-container #contact{
+
+
+    #contact{
+        border: 2px solid black;
+        height: 40%;
+        width: 40%;
+        object-fit: cover;
+    }
+
+    h1{
+        font-family: "Press Start 2P", system-ui;
+    }
+}
+
 
 /*navigation*/
 .navbar{
