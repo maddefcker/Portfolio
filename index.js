@@ -1,10 +1,27 @@
-//för att öppna flik/window
-const iconImage = document.querySelector(".icon-container img");
-const windowElement = document.querySelector(".window-container");
+//GAMMAL -för att öppna flik/window
 
-iconImage.addEventListener("dblclick",()=>{
-    windowElement.style.display = "block"
-});
+// const iconImage = document.querySelector(".icon-container img");
+// const windowElement = document.querySelector(".window-container");
+
+// iconImage.addEventListener("dblclick",()=>{
+//     windowElement.style.display = "block"
+// });
+
+
+//funktion för att öppna window
+function openWindow(iconId, windowId){
+    const icon = document.getElementById(iconId);
+    const window = document.getElementById(windowId);
+
+    icon.addEventListener("dblclick",()=>{
+        window.style.display = "block";
+    })
+}
+
+//kalla på funkctionen
+openWindow("iconContact","contact");
+openWindow("iconAbout","about")
+
 
 
 //funktion för att stänga flik/window
