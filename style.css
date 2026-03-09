@@ -55,6 +55,15 @@
     display: none;
 }
 
+.titlebar{
+
+    button.close{
+        color:blue;
+        cursor: pointer;
+        position: relative;
+        z-index: 1000;
+    }
+}
 
 /*title*/
 .titlebar{

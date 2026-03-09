@@ -8,3 +8,20 @@ iconImage.addEventListener("dblclick",()=>{
 
 
 //funktion för att stänga flik/window
+// function closeWindow(closeClass, windowClass){
+// const closeBtn = document.querySelector("."+"closeClass");
+// const windowEl = document.querySelector("."+"windowClass");
+
+// closeBtn.addEventListener("click",()=>{
+//     windowEl.classList.toggle("hide");
+// })
+// };
+
+//kalla på funktionen
+// closeWindow("close","window-container");
+
+document.querySelectorAll(".close").forEach(btn=>{
+    btn.addEventListener("click",()=>{
+        btn.closest(".window-container").classList.add("hide");
+    });
+});
