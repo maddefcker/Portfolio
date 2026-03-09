@@ -49,37 +49,73 @@
     position: absolute;
     top: 120px;
     left: 200px;
-    width: 320px;
+    width: 520px;
+    height: 700px;
     background-color: #ECE9D8;
     border: 2px solid #000;
-    display: none;
+
+    display: none;    
 }
 
-.titlebar{
 
-    button.close{
-        color:blue;
-        cursor: pointer;
-        position: relative;
-        z-index: 1000;
-    }
-}
-
-/*title*/
+/*window title*/
 .titlebar{
-    background-color: linear-gradient(#0a246a, #3a6ea5);
-    color: white;
+    background-color: pink;
+    /* background-color: linear-gradient(#0a246a, #3a6ea5); */
+    color: black;
     padding: 4px;
     font-weight: bold;
     display: flex;
     justify-content: space-between;
     cursor: move;
+
+     button.close{
+        color:black;
+        cursor: pointer;
+        position: relative;
+        z-index: 1000;
+    }
+
 }
 
 /*content/innehåll*/
  .content-container{
     color: black;
     border: 2px solid white;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    #me{
+        border: 0px solid black;
+        margin-top:20px;
+        height: 90%;
+        width: 50%;
+        object-fit: cover;
+    }
+
+    aboutText{
+        height: 90%;
+        width: 50%;
+        margin-top: 20px;
+        border: 0px solid black;
+        text-align: center;
+    }
+
+    h1{
+        margin-top: 50px;
+        font-family: "Press Start 2P", system-ui;
+        text-align: center;
+        font-size: 2vh;
+    }
+
+    p{
+        font-family: sans-serif;
+        color: black;
+        text-align: center;
+    }
 } 
 
 /*navigation*/
