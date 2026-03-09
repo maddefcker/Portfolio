@@ -136,6 +136,7 @@
 
     h1{
         text-align: center;
+
     }
 }
 
@@ -149,11 +150,26 @@
 }
 
 /*Mail-form*/
-.content-container{
+#mailContainer{
+    display: flex;
+    flex-direction: column;
+    
     form{
-        
-    }
+        height: 50%;
+        width: 50%;
+        border: 2px solid black;
 
+        #name, #email, #message{
+            margin: 5px;
+            padding: 1.5%;
+        }
+
+    }
+    mailText{
+        border: 2px solid red;
+        height: 50%;
+        width: 100%;
+    }
     h1{
         font-size: 1.4rem;
         font-family: "Press Start 2P", system-ui;
