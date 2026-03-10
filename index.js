@@ -43,7 +43,8 @@ closeWindow("btnMail","mail");
 
 
 //funktion för att kunna dra runt alla olika windows
-let draggableElement = document.getElementById("about")
+ let draggableElement = document.getElementById("about")
+
 let offsetX, offsetY;
 
 draggableElement.addEventListener("mousedown",startDragging);
