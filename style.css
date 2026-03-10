@@ -78,7 +78,7 @@
 }
 
 
-/*about me*/
+/*container standard-layout*/
  .content-container{
     color: black;
     border: 2px solid white;
@@ -88,6 +88,8 @@
     align-items: center;
     justify-content: center;
 
+
+    /*about me*/
     #me{
         border: 0px solid black;
         margin-top:20px;
