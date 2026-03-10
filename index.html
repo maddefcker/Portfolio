@@ -37,16 +37,18 @@
 
         <!--Desktop ikoner/program rad 2-->
         <div class="icon-container1">
-            <img src="icons/love.png"alt="ex">
-            <p>Rad 2</p>
+            <img src="icons/love.png"alt="tech">
+            <p>Techstack</p>
             
-            <div class="links">
+            <!--Fixa linkedin/github länken så att dem ej stör andra öppna fönster-->
+            <!--Länkar till github/linkedin-->
+            <!-- <div class="links">
                 <a href="https://github.com/maddefcker" target="_blank"><img src="icons/github.png"</a>
                 <p>Github</p>
 
                 <a href="https://www.linkedin.com/in/madeleine-karlsson-a18278193/"target="_blank"><img src="icons/linkedin.png"/a>
                     <p>LinkedIn</p>
-            </div>
+            </div> -->
         </div>
 
          <!--About me-->
@@ -100,7 +102,7 @@
         <!--Mail-form-->
         <div class="window-container"id="mail">
             <div class="titlebar">
-                Mail
+                Email
                 <button class="close"id="btnMail">X</button>
             </div>
             <div class="content-container"id="mailContainer">
@@ -109,9 +111,14 @@
                 </mailText>
                 <form action="https://formsubmit.co/madeleine.karlsson99@gmail.com"method="POST">
                     <input type="text"id="name"name="name"placeholder="Firstname"required>
+                    <input type="text"id="lname"name="name"placeholder="Lastname"required>
                     <input type="email"id="email"email="email"placeholder="Email"required>
-                    <textarea id="message" id="message" name="message" rows="7"cols="30"required>Your message here...</textarea>
-                    <button type ="submit">Send</button>
+                    <input type="tel"id="phone"tel="phone"placeholder="Phone number">
+                    <textarea id="message" id="message" name="message" rows="7"cols="45"required>Your message here...</textarea>
+                    <div class="btnSubmit">
+                        <button type ="submit">Send</button>
+                    </div>
+                    <!-- <button type ="submit">Send</button> -->
                 </form>
             </div>
 
