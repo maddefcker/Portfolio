@@ -1,11 +1,33 @@
-/*start*/
+/*bakgrundsbild/startskärm*/
 .desktop{
     height: 100vh;
     width: 100vw;
-    background-image: url(https://sadhost.neocities.org/images/tiles/stars5.gif);
+
+    /* background-image: url(https://sadhost.neocities.org/images/tiles/stars5.gif); */
+    background-image: url(https://dn721309.ca.archive.org/0/items/theoriginalfilesofsomewindowswallpapers/bliss%20600dpi.jpg);
+    background-size: cover;
+    background-position: center;
+
     position: relative;
     overflow: hidden;
 }
+
+/*gammal skräm effekt*/
+.desktop::after{
+    content:"";
+    position: absolute;
+    inset:0;
+    background: repeating-linear-gradient(
+        rgba(0,0,0,0.2) 0px,
+        rgba(0,0,0,0.2) 1px,
+        transparent 1px,
+        transparent 3px
+    );
+    pointer-events: none;
+    mix-blend-mode: multiply; 
+}
+
+
 
 /*fönster/flikar/window*/
 .icon-container,
@@ -127,6 +149,14 @@
         font-size: 1rem;
     }
 } 
+
+/*stickers*/
+.sticker{
+    position: absolute;
+    top:550px;
+    right:55px;
+    transform: rotate(10deg) scale(1.3);
+}
 
 /*contact*/
 .content-container{
