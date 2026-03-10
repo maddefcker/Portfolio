@@ -26,6 +26,7 @@ openWindow("iconMail","mail");
 function closeWindow(buttonId,windowId){
     const btn = document.getElementById(buttonId);
     const window = document.getElementById(windowId);
+
     btn.addEventListener("click",()=>{
         window.classList.toggle("hide");
     })
@@ -41,4 +42,30 @@ closeWindow("btnMail","mail");
 // closeWindow("btnCV","cv");
 
 
-//lägg till id för resterande buttons & addera till funktionen
+//funktion för att kunna dra runt alla olika windows
+let draggableElement = document.getElementById("about")
+let offsetX, offsetY;
+
+draggableElement.addEventListener("mousedown",startDragging);
+draggableElement.addEventListener("mouseup", stopDragging);
+
+function startDragging(e){
+    e.preventDefault();
+    offsetX = e.clientX - draggableElement.getBoundingClientRect().left;
+    offsetY = e.clientY - draggableElement.getBoundingClientRect().top;
+    draggableElement.classList.add("dragging");
+    document.addEventListener("mousemove",dragElement);
+}
+
+function dragElement(e){
+    e.preventDefault();
+    let x = e.clientX - offsetX;
+    let y = e.clientY - offsetY;
+    draggableElement.style.left = x + "px";
+    draggableElement.style.top = y + "px";
+}
+
+function stopDragging(){
+    draggableElement.classList.remove("dragging");
+    document.removeEventListener("mousemove",dragElement);
+}

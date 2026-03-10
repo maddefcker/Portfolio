@@ -54,7 +54,9 @@
     height: 700px;
     background-color: #ECE9D8;
     border: 2px solid #000;
-    display: none;    
+    display: none;
+
+    cursor: grab; /*sätt på endast titlebar senare*/
 }
 
 /*window border w title*/
