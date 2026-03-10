@@ -160,19 +160,41 @@
 }
 
 /*contact*/
-.content-container{
+#contact{
+    height: 400px;
+}
+#contact-container{
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+
+    contactText{
+        border: 0px solid black;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .socials{
+        border: 0px solid red;
+        width: 100%;
+        height: 60%;
+    }
     #contactImg{
-        border: 2px solid black;
-        height: 10%;
-        width: 10%;
-        object-fit: cover;
+        padding: 10px;
+        margin: 0px;
+        border: 0px solid black;
+        height: 30%;
+        width: 20%;
+        object-fit: contain;
     }
 
     h1{
         text-align: center;
-
+        margin-top: 10%;
+        font-size: 1rem;
     }
 }
+
 
 /*projects*/
 .content-container{
