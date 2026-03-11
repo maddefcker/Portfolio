@@ -38,7 +38,7 @@
 
         <!--Desktop ikoner/program rad 2-->
         <div class="icon-container1">
-            <img src="icons/love.png"alt="tech">
+            <img src="icons/love.png"alt="tech"id="iconTech">
             <p>Techstack</p>
             
             <!--Fixa linkedin/github länken så att dem ej stör andra öppna fönster-->
@@ -116,7 +116,7 @@
                     <img src="icons/warning.png"alt="warning">
                 </div>
                 <div class="button-container">
-                    <button id="download">Yes</button>
+                    <button id="download"type="submit"onclick="window.open('file.doc')">Yes</button>
                     <button id="cancel">No</button>
                 </div>
         </div>
@@ -156,7 +156,17 @@
                     <!-- <button type ="submit">Send</button> -->
                 </form>
             </div>
+        </div>
 
+        <!--Techstack-->
+        <div class="window-container"id="techstack">
+            <div class="titlebar">
+                Techstack
+                <button class="close"id="btnTech">X</button>
+            </div>
+            <div class="content-container"id="techContainer">
+                <h1>Techstack</h1>
+            </div>
         </div>
         
 

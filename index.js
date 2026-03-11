@@ -14,11 +14,12 @@ openWindow("iconContact","contact");
 openWindow("iconAbout","about");
 openWindow("iconProj","projects");
 openWindow("iconMail","mail");
+openWindow("iconTech","techstack");
 
 //fönster ej skapade ännu, lägg till senare
 
 // openWindow("iconRef","references");
-// openWindow("iconCV","cv");
+
 
 
 
@@ -36,10 +37,10 @@ closeWindow("btnAbout","about");
 closeWindow("btnContact","contact");
 closeWindow("btnProj","projects");
 closeWindow("btnMail","mail");
+closeWindow("btnTech","techstack");
 
 //ej skapade ännu, lägg till senare
 // closeWindow("btnReferences","references");
-// closeWindow("btnCV","cv");
 
 
 //funktion för att kunna dra runt alla olika windows
