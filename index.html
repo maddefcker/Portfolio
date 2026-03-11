@@ -57,6 +57,12 @@
             <div class="titlebar">
                 About me
                 <button class="close"id="btnAbout">X</button>
+
+                <!--Resterande knappar att addera senare-->
+                <!-- <button class="">▢</button>
+                <button class="minimize">-</button> -->
+
+
             </div>
             <div class="content-container">
                 <img id="me"src="images/me.png"alt="me">
@@ -91,16 +97,25 @@
                     <img id="contactImg"src="icons/instagram.png"alt="insta">
                     <!-- <p>Instagram</p> -->
                 </div>
-                <div class="cv">
+                 <div class="cv">
                     <h1>Download CV</h1>
-                <button>Download</button>
+                <button id="btnCV">Download</button>
                 </div>
-                <!--buttonclick - popup fönster med varning-->
 
                 <!-- <img id="contactImg"src="icons/contact.png"alt=contact>
                 <img id="contactImg"src="icons/github.png"alt="github">
                 <img id="contactImg"src="icons/"alt="insta"> -->
             </div>
+        </div>
+
+        <!--buttonclick - popup fönster med varning CV-->
+        <div class="window-container"id="cv">
+                <div class="popupText"id="warningText">
+                    <h3>Warning</h3>
+                    <p>Are you sure you want to download this file?</p>
+                </div>
+                <button id="download">Yes</button>
+                <button id="cancel">No</button>
         </div>
 
         <!--Projects-->

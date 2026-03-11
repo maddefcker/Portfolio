@@ -9,7 +9,7 @@ function openWindow(iconId, windowId){
     })
 }
 
-//kalla på funkctionen
+//kalla på funkctionen - öppna fönster
 openWindow("iconContact","contact");
 openWindow("iconAbout","about");
 openWindow("iconProj","projects");
@@ -22,7 +22,7 @@ openWindow("iconMail","mail");
 
 
 
-//annan funktion för att stänga fönster
+//funktion för att stänga fönster
 function closeWindow(buttonId,windowId){
     const btn = document.getElementById(buttonId);
     const window = document.getElementById(windowId);
@@ -31,7 +31,7 @@ function closeWindow(buttonId,windowId){
         window.classList.toggle("hide");
     })
 }
-//kalla på funktionen
+//kalla på funktionen - stäng ner fönster
 closeWindow("btnAbout","about");
 closeWindow("btnContact","contact");
 closeWindow("btnProj","projects");
@@ -70,3 +70,18 @@ function stopDragging(){
     draggableElement.classList.remove("dragging");
     document.removeEventListener("mousemove",dragElement);
 }
+
+
+//funktion för popup-window CV
+function popup(buttonId,popupId){
+    const cv = document.getElementById(buttonId);
+    const popupwindow = document.getElementById(popupId);
+    
+    cv.addEventListener("click",()=>{
+        popupwindow.style.display="block";
+        popupwindow.classList.remove("hide");
+    })
+}
+
+//kalla på funktionen - popup cv
+popup("btnCV","cv");
