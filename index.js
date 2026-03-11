@@ -15,13 +15,7 @@ openWindow("iconAbout","about");
 openWindow("iconProj","projects");
 openWindow("iconMail","mail");
 openWindow("iconTech","techstack");
-
-//fönster ej skapade ännu, lägg till senare
-
-// openWindow("iconRef","references");
-
-
-
+openWindow("iconRef","references");
 
 //funktion för att stänga fönster
 function closeWindow(buttonId,windowId){
@@ -38,9 +32,7 @@ closeWindow("btnContact","contact");
 closeWindow("btnProj","projects");
 closeWindow("btnMail","mail");
 closeWindow("btnTech","techstack");
-
-//ej skapade ännu, lägg till senare
-// closeWindow("btnReferences","references");
+closeWindow("btnRef","references");
 
 
 //funktion för att kunna dra runt alla olika windows
