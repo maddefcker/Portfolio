@@ -139,12 +139,16 @@
     }
 
     h3{
-        font-size: 1.4rem;
-        font-family: sans-serif;
+        font-size: 1.1rem;
+        font-family:"tahoma", sans-serif;
+        /* font-weight: 400; */
+        font-style: normal;
     }
 
     span{
-        font-family: sans-serif;
+        font-family: "tahoma", sans-serif;
+        font-weight: 400;
+        font-style: normal;
         color: black;
         text-align: center;
         font-size: 1rem;
@@ -192,6 +196,17 @@
         text-align: center;
         margin-top: 10%;
         font-size: 1rem;
+    }
+}
+
+.cv{
+    padding-bottom: 10%;
+    text-align: center;
+
+    button{
+        padding:10px;
+        width: 10rem;
+        cursor: pointer;
     }
 }
 
@@ -277,10 +292,22 @@
     height: 40px;
     width: 100%;
 
+    /* background: #759e1b; */
     background: white;
+    /* mix-blend-mode: multiply; */
 
     display: flex;
     align-items: center;
+
+    button{
+        border: 0px;
+        background-color: white;
+        color: black;
+        cursor: pointer;
+        padding: 10px;
+        margin-left: 8px;
+    }
+
 }
 
 .sticker{

@@ -13,6 +13,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@300..700&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.typekit.net/gst8sis.css">
     </head>
     <body>   
         <!--startsida-->
@@ -68,7 +69,7 @@
                     <h3>Pets: <span>Proud cat mom to a sphynx named Medusa and a ragdoll named Zinja</span></h3>
                 </aboutText>
 
-                <img class="sticker" src="stickers/camera.png"alt="camera">
+                <!-- <img class="sticker" src="stickers/camera.png"alt="camera"> -->
             </div>
         </div>
 
@@ -90,6 +91,12 @@
                     <img id="contactImg"src="icons/instagram.png"alt="insta">
                     <!-- <p>Instagram</p> -->
                 </div>
+                <div class="cv">
+                    <h1>Download CV</h1>
+                <button>Download</button>
+                </div>
+                <!--buttonclick - popup fönster med varning-->
+
                 <!-- <img id="contactImg"src="icons/contact.png"alt=contact>
                 <img id="contactImg"src="icons/github.png"alt="github">
                 <img id="contactImg"src="icons/"alt="insta"> -->
@@ -140,6 +147,7 @@
         </div>
 
         <div class="start-menu" id="start-menu">
+            <button data-window="home">Home</button>
             <button data-window="aboutMe">About me</button>
             <button data-window="findMe">Find me</button>
             <button data-window="projects">Projects</button>
@@ -147,21 +155,21 @@
             <button data-window="references">References</button>
         </div>
 
+        <!--högermeny, music player(?), klocka, väder-api-->
+        <div class="menu-right">
+
+        </div>
+
         <!--Stickers-->
         <!-- <div class="sticker">
             <img src="stickers/camera.png"class="sticker"alt="camera"> 
         </div> -->
     </div>
-
-    <!--Popup window-->
-    <div class="cv">
-        Download CV
-    </div>
     
     <!--Footer-->
-    <footer>
+    <!-- <footer>
         <p>2026</p>
-    </footer>
+    </footer> -->
 
     <!--Länka till JS fil-->
     <script src="index.js"></script>
