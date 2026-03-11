@@ -85,3 +85,18 @@ function popup(buttonId,popupId){
 
 //kalla på funktionen - popup cv
 popup("btnCV","cv");
+
+//funktion för att stänga popup-fönstret
+function closePopup(buttonId, popupId){
+    const cancel = document.getElementById(buttonId);
+    const popupwindow = document.getElementById(popupId);
+
+    cancel.addEventListener("click",()=>{
+        popupwindow.classList.toggle("hide");
+    })
+}
+
+//kalla på funktionen
+closePopup("cancel","cv");
+
+//funktion för att ladda ner CV om man klickar på "yes"
