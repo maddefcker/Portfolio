@@ -41,8 +41,11 @@
             <img src="icons/love.png"alt="tech"id="iconTech">
             <p>Techstack</p>
 
-            <img src="icons/folder.png"alt="references"id="iconRef">
+            <img src="icons/references.png"alt="references"id="iconRef">
             <p>References</p>
+
+            <img src="icons/trash.png"alt="trashcan"id="iconTrash">
+            <p>Bin</p>
             
             <!--Fixa linkedin/github länken så att dem ej stör andra öppna fönster-->
             <!--Länkar till github/linkedin-->
@@ -64,7 +67,6 @@
                 <!--Resterande knappar att addera senare-->
                 <!-- <button class="">▢</button>
                 <button class="minimize">-</button> -->
-
 
             </div>
             <div class="content-container">
@@ -90,7 +92,7 @@
             </div>
             <div class="content-container"id="contact-container">
                 <contactText>
-                    <h1>Find me</h1>
+                    <h1 id="about-h1">Find me</h1>
                 </contactText>
                 <div class="socials">
                     <img id="contactImg"src="icons/linkedin.png"alt=linkedin>
@@ -156,7 +158,6 @@
                     <div class="btnSubmit">
                         <button type ="submit">Send</button>
                     </div>
-                    <!-- <button type ="submit">Send</button> -->
                 </form>
             </div>
         </div>
@@ -170,6 +171,9 @@
             <div class="content-container"id="techContainer">
                 <h1>Techstack</h1>
             </div>
+            <div class="tech-icons">
+
+            </div>
         </div>
 
         <!--References-->
@@ -179,14 +183,16 @@
                 <button class="close"id="btnRef">X</button>
             </div>
             <div class="content-container"id="refContainer">
-                <h1>References</h1>
+                <div class="refText"id="refText">
+                    <h1>References</h1>
+                    <h4>Reference 1</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus necessitatibus corrupti, assumenda velit dolor cumque dolorum ipsam perferendis iure aliquid!</p>
+                    <h4>Reference 2</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat labore architecto sunt rerum, qui aspernatur sit nesciunt odit unde nulla totam similique sed voluptatem pariatur.</p>
+                </div>
             </div>
         </div>
         
-
-        <div class="navbar">
-            <button id="home">Home</button>
-        </div>
 
         <div class="start-menu" id="start-menu">
             <button data-window="home">Home</button>
@@ -195,12 +201,12 @@
             <button data-window="projects">Projects</button>
             <button data-window="contact">Contact</button>
             <button data-window="references">References</button>
+
+            <!-- <div class="right-menu">
+                <img src="icons/battery.png"id="battery">
+            </div> -->
         </div>
 
-        <!--högermeny, music player(?), klocka, väder-api-->
-        <div class="menu-right">
-
-        </div>
 
         <!--Stickers-->
         <!-- <div class="sticker">
@@ -208,11 +214,6 @@
         </div> -->
     </div>
     
-    <!--Footer-->
-    <!-- <footer>
-        <p>2026</p>
-    </footer> -->
-
     <!--Länka till JS fil-->
     <script src="index.js"></script>
     </body>

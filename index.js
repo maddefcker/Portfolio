@@ -5,7 +5,7 @@ function openWindow(iconId, windowId){
 
     icon.addEventListener("dblclick",()=>{
         window.style.display = "block";
-        window.classList.remove("hide"); //tar bort hide så att fönster går att öppna om & om igen efter de stängts
+        window.classList.remove("hide"); 
     })
 }
 
