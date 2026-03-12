@@ -35,7 +35,7 @@ closeWindow("btnTech","techstack");
 closeWindow("btnRef","references");
 
 
-//funktion för att kunna dra runt alla olika windows
+//funktion för att kunna dra runt alla olika windows - fungerar bara på aboutme
  let draggableElement = document.getElementById("about")
 
 let offsetX, offsetY;
@@ -63,6 +63,8 @@ function stopDragging(){
     draggableElement.classList.remove("dragging");
     document.removeEventListener("mousemove",dragElement);
 }
+
+
 
 
 //funktion för popup-window CV

@@ -88,6 +88,8 @@ button{
 /*window border w title*/
 .titlebar{
     background-color: pink;
+
+    /* background-color: #0a246a; */
     /* background-color: linear-gradient(#0a246a, #3a6ea5); */
     color: black;
     padding: 4px;
@@ -269,14 +271,23 @@ button{
 /*References container*/
 #references{
     height: 350px;
-    
+
+    #refIcons{
+        margin-bottom: -80px;
+    }
+    img{
+        width: 90px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
     #refText{
         padding:5%;
     }
     h1{
         border: 0px solid black;
-        margin-top: 0%;
+        margin-top: 10%;
         margin-bottom: 10%;
+        text-align: left;
     }
     h4{
         font-family: "Press Start 2P", system-ui;
@@ -288,6 +299,7 @@ button{
         font-size: 13px;
     }
 }
+
 
 /*Techstack*/
 #techstack{
@@ -375,6 +387,7 @@ button{
 
     display: flex;
     align-items: center;
+
 
     button{
         border: 0px;
