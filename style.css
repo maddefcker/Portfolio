@@ -1,7 +1,10 @@
 /*bakgrundsbild/startskärm*/
 .desktop{
-    height: 100vh;
-    width: 100vw;
+    /* height: 100vh;
+    width: 100vw; */
+
+    height: 95vh;
+    width: 100%;
 
     /* background-image: url(https://sadhost.neocities.org/images/tiles/stars5.gif); */
     background-image: url(https://dn721309.ca.archive.org/0/items/theoriginalfilesofsomewindowswallpapers/bliss%20600dpi.jpg);
@@ -12,9 +15,9 @@
     overflow: hidden;
 }
 
-/*gammal skräm effekt*/
-.desktop::after{
-    content:"";
+/*Gammal skräm effekt, appliceras på hela sidan*/
+body::after{
+     content:"";
     position: absolute;
     inset:0;
     background: repeating-linear-gradient(
@@ -343,6 +346,7 @@ button{
         #name, #lname, #email, #phone, #message{
             margin: 10px;
             padding: 1.5%;
+            font-family: "tahoma", sans-serif;
         }
 
     }
@@ -378,7 +382,7 @@ button{
     bottom: 0;
     left: 0;
 
-    height: 40px;
+    height: 5%;
     width: 100%;
 
     /* background: #759e1b; */
