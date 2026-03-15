@@ -16,6 +16,8 @@ openWindow("iconProj","projects");
 openWindow("iconMail","mail");
 openWindow("iconTech","techstack");
 openWindow("iconRef","references");
+openWindow("iconTrash","bin");
+openWindow("iconMeow","meow");
 
 //funktion för att stänga fönster
 function closeWindow(buttonId,windowId){
@@ -33,7 +35,8 @@ closeWindow("btnProj","projects");
 closeWindow("btnMail","mail");
 closeWindow("btnTech","techstack");
 closeWindow("btnRef","references");
-
+closeWindow("btnBin","bin");
+closeWindow("btnMeow","meow");
 
 //funktion för att kunna dra runt alla olika windows - fungerar bara på aboutme
  let draggableElement = document.getElementById("about")
