@@ -38,6 +38,25 @@ closeWindow("btnRef","references");
 closeWindow("btnTrash","trashcan");
 closeWindow("btnMeow","meow");
 
+//funktion för nav-bar - öppna fönster
+function navOpen(buttonId,windowId){
+    const window = document.getElementById(windowId);
+    const nav = document.getElementById(buttonId);
+
+    nav.addEventListener("click",()=>{
+        window.style.display = "block";
+        window.classList.remove("hide");
+    })
+}
+
+//kalla på funktionen för nav
+navOpen("navAbout","about");
+navOpen("navContact","contact");
+navOpen("navProj","projects");
+navOpen("navEmail","mail");
+navOpen("navRef","references");
+navOpen("navTech","techstack");
+
 //funktion för att kunna dra runt alla olika windows - fungerar bara på aboutme
  let draggableElement = document.getElementById("about")
 
