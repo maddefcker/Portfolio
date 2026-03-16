@@ -485,25 +485,42 @@ button{
     }
 
     button:hover{
-        background-color: rgb(240, 240, 240);
+        background-color: rgb(230, 230, 230);
     }
 
     img{
-        width: 42px;
-        height:auto
+        height: 100%;
+        max-height: 35px;
+        width: auto;
     }
-    /* #battery{
-       width: 30px; 
-       
-    } */
 }
 
+/*Väder-widget*/
+#weatherApp{
+    width: 350px;
+    height: 150px;
 
-.sticker{
-    position: absolute;
-    width: 80px;
-    cursor: grab;
+    display: flex;
+    /* mix-blend-mode:multiply; */
+
+    left: 70%;
+
+
+    #weatherContainer{
+        border: 0px solid black;
+    }
+
+    h3{
+        font-size: 1rem;
+        color: black;
+        text-align: right;
+    }
 }
+
+#weatherIcon{
+    width:5rem;
+}
+
 
 /*för att gömma flik/window*/
 .hide{

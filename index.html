@@ -59,7 +59,7 @@
         </div>
 
          <!--About me-->
-        <div class="window-container"id="about" draggable="true">
+        <div class="window-container"id="about">
             <div class="titlebar">
                 About me
                 <button class="close"id="btnAbout">X</button>
@@ -251,6 +251,19 @@
             <button data-window="techstack"title="Techstack"><img src="icons/love.png"id="navTech"></button>
         </div>
 
+        <!--VÄDER APP-->
+        <div class="window-container"id="weatherApp">
+            <div class="content-container"id="weatherContainer">
+                <!-- <input type="text"id="locationInput"placeholder="Enter a city"> -->
+                <button id ="searchButton"title="Click me!"><img src="icons/sun.png"id="weatherIcon"></button>
+                <div id="weather-info">
+                    <h3 id ="location"></h3>
+                    <p id="temperature"></p>
+                    <p id="description"></p>
+                    <p id="wind-speed"></p>
+                </div>
+            </div>
+        </div>
     </div>
     
     <!--Länka till JS fil-->

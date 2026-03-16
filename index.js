@@ -58,35 +58,67 @@ navOpen("navRef","references");
 navOpen("navTech","techstack");
 
 //funktion för att kunna dra runt alla olika windows - fungerar bara på aboutme
- let draggableElement = document.getElementById("about")
+
+//NY TEST FUNKTION
+ let draggableElement = document.querySelectorAll(".window-container").forEach(el =>{
+    makeDraggable(el);
+ });
+function makeDraggable(draggableElement){
 
 let offsetX, offsetY;
 
-draggableElement.addEventListener("mousedown",startDragging);
+draggableElement.addEventListener("mousedown", startDragging);
 draggableElement.addEventListener("mouseup", stopDragging);
 
 function startDragging(e){
-    e.preventDefault();
-    offsetX = e.clientX - draggableElement.getBoundingClientRect().left;
-    offsetY = e.clientY - draggableElement.getBoundingClientRect().top;
-    draggableElement.classList.add("dragging");
-    document.addEventListener("mousemove",dragElement);
+
+  offsetX = e.clientX - draggableElement.getBoundingClientRect().left;
+  offsetY = e.clientY - draggableElement.getBoundingClientRect().top;
+
+  document.addEventListener("mousemove", dragElement);
 }
 
 function dragElement(e){
-    e.preventDefault();
-    let x = e.clientX - offsetX;
-    let y = e.clientY - offsetY;
-    draggableElement.style.left = x + "px";
-    draggableElement.style.top = y + "px";
+
+  let x = e.clientX - offsetX;
+  let y = e.clientY - offsetY;
+
+  draggableElement.style.left = x + "px";
+  draggableElement.style.top = y + "px";
 }
 
 function stopDragging(){
-    draggableElement.classList.remove("dragging");
-    document.removeEventListener("mousemove",dragElement);
+  document.removeEventListener("mousemove", dragElement);
+}
 }
 
+//GAMMAL FUNKTION
+//  let draggableElement = document.getElementById("about")
+// let offsetX, offsetY;
 
+// draggableElement.addEventListener("mousedown",startDragging);
+// draggableElement.addEventListener("mouseup", stopDragging);
+
+// function startDragging(e){
+//     e.preventDefault();
+//     offsetX = e.clientX - draggableElement.getBoundingClientRect().left;
+//     offsetY = e.clientY - draggableElement.getBoundingClientRect().top;
+//     draggableElement.classList.add("dragging");
+//     document.addEventListener("mousemove",dragElement);
+// }
+
+// function dragElement(e){
+//     e.preventDefault();
+//     let x = e.clientX - offsetX;
+//     let y = e.clientY - offsetY;
+//     draggableElement.style.left = x + "px";
+//     draggableElement.style.top = y + "px";
+// }
+
+// function stopDragging(){
+//     draggableElement.classList.remove("dragging");
+//     document.removeEventListener("mousemove",dragElement);
+// }
 
 
 //funktion för popup-window CV
@@ -116,4 +148,36 @@ function closePopup(buttonId, popupId){
 //kalla på funktionen
 closePopup("cancel","cv");
 
-//funktion för att ladda ner CV om man klickar på "yes"
+
+//Väder-API
+const apiKey ='f93e6b4c871724ed933a2c8d81f40439';
+const apiUrl = 'https://api.openweathermap.org/data/2.5/weather';
+
+// const locationInput = document.getElementById("locationInput");
+// const searchButton = document.getElementById("searchButton");
+const locationElement = document.getElementById("location");
+const temperatureElement = document.getElementById("temperature");
+const descriptionElement = document.getElementById("description");
+
+const weatherIcon = document.getElementById("weatherIcon");
+
+weatherIcon.addEventListener("click",()=>{
+    fetchWeather(location);
+})
+
+function fetchWeather(){
+    const url = `${apiUrl}?q=Norrtälje&appid=${apiKey}&units=metric`;
+
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            locationElement.textContent = data.name;
+            temperatureElement.textContent = `${Math.round(data.main.temp)} °C`;
+            descriptionElement.textContent = data.weather[0].description;
+        })
+
+        // .catch(error =>{
+        //     console.error("Error fetching weather data", error);
+        // });
+}
+
