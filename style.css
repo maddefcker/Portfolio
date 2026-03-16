@@ -493,7 +493,19 @@ button{
         max-height: 35px;
         width: auto;
     }
+
+    #navMe{
+        position: fixed;
+        margin-left: 95%;
+        font-family: "tahoma", sans-serif;
+    }
 }
+
+/* #darkMode{
+    position: fixed;
+    margin-left: 92%;
+} */
+
 
 /*Väder-widget*/
 #weatherApp{
@@ -537,9 +549,15 @@ button{
 
 
 /*mobilver*/
-@media(max-width: 700px){
+/* @media(max-width: 700px){
     .desktop{
         transform: scale(0,8);
         transform-origin: top left;
+    }
+} */
+
+@media only screen and (max-width: 600px){
+    .icon-container{
+        
     }
 }

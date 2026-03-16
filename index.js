@@ -92,34 +92,6 @@ function stopDragging(){
 }
 }
 
-//GAMMAL FUNKTION
-//  let draggableElement = document.getElementById("about")
-// let offsetX, offsetY;
-
-// draggableElement.addEventListener("mousedown",startDragging);
-// draggableElement.addEventListener("mouseup", stopDragging);
-
-// function startDragging(e){
-//     e.preventDefault();
-//     offsetX = e.clientX - draggableElement.getBoundingClientRect().left;
-//     offsetY = e.clientY - draggableElement.getBoundingClientRect().top;
-//     draggableElement.classList.add("dragging");
-//     document.addEventListener("mousemove",dragElement);
-// }
-
-// function dragElement(e){
-//     e.preventDefault();
-//     let x = e.clientX - offsetX;
-//     let y = e.clientY - offsetY;
-//     draggableElement.style.left = x + "px";
-//     draggableElement.style.top = y + "px";
-// }
-
-// function stopDragging(){
-//     draggableElement.classList.remove("dragging");
-//     document.removeEventListener("mousemove",dragElement);
-// }
-
 
 //funktion för popup-window CV
 function popup(buttonId,popupId){
@@ -175,9 +147,7 @@ function fetchWeather(){
             temperatureElement.textContent = `${Math.round(data.main.temp)} °C`;
             descriptionElement.textContent = data.weather[0].description;
         })
-
-        // .catch(error =>{
-        //     console.error("Error fetching weather data", error);
-        // });
 }
+
+//dark mode
 
