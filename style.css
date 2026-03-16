@@ -497,29 +497,37 @@ button{
 
 /*Väder-widget*/
 #weatherApp{
-    width: 350px;
-    height: 150px;
-
-    display: flex;
-    /* mix-blend-mode:multiply; */
-
-    left: 70%;
-
-
-    #weatherContainer{
-        border: 0px solid black;
-    }
+    border: 0px solid black;
+    width: 300px;
+    text-align: right;
+    color: white;
+    position: absolute;
+    top:70px;
+    right:150px;
+    cursor: pointer;
 
     h3{
-        font-size: 1rem;
-        color: black;
-        text-align: right;
+        font-family: "Press Start 2P", system-ui;
+        font-size: 0.8rem;
+        color: white;
+        color: #153677;
+        text-align: left;
+        margin-top: -80px;
+    }
+    p{
+        font-size: 0.7rem;
+        /* font-family: "tahoma", sans-serif; */
+        font-family: "Press Start 2P", system-ui;
+        text-align: left;
+        color: #153677;
     }
 }
 
 #weatherIcon{
-    width:5rem;
+    width:7rem;
+    background-color: transparent;
 }
+
 
 
 /*för att gömma flik/window*/
