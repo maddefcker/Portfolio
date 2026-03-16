@@ -1,6 +1,7 @@
 # Portfolio
 ---
 ## Introduction
+---
 Portfolio webside used to showcase my projects, display links to my social medias and get to know me as a person.
 ---
 
