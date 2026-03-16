@@ -149,5 +149,3 @@ function fetchWeather(){
         })
 }
 
-//dark mode
-
