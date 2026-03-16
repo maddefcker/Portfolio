@@ -56,6 +56,11 @@ button{
     img{
         width: 48px;
     }
+
+    p{
+        color: white;
+        text-shadow: 2px 2px 2px #000000;
+    }
 }
 
 
@@ -72,6 +77,11 @@ button{
     img{
         width: 48px;
     }
+    p{
+        color: white;
+        text-shadow: 2px 2px 2px #000000;
+    }
+
 }
 
 /*fönster/flikar*/
@@ -482,7 +492,6 @@ button{
         width: 42px;
         height:auto
     }
-
     /* #battery{
        width: 30px; 
        
