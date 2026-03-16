@@ -5,7 +5,7 @@ Also includes a weather API that shows the weather in the city where i live.
 
 ## Methods
 * **Weather API** - Openweatherapp
-* **Javascript** - function, getElementById, querySelectorAll
+* **Javascript** - function, getElementById, querySelectorAll, eventListener, mousedown/up/move
 * HTML
 * CSS
 
