@@ -32,7 +32,7 @@
             <img src="icons/email.png"alt="mail"id="iconMail">
             <p>Email</p>
 
-            <img src="icons/cat.png"alt="ex"id="iconMeow">
+            <img src="icons/cat.png"alt="cats"id="iconMeow">
             <p>Meow</p>
         </div>
 
@@ -102,11 +102,10 @@
                     <img id="contactImg"src="icons/instagram.png"alt="insta">
                     <!-- <p>Instagram</p> -->
                 </div>
-                 <div class="cv">
+                 <div class="cv"id="cvContainer">
                     <h1>Download CV</h1>
                 <button id="btnCV">Download</button>
                 </div>
-
                 <!-- <img id="contactImg"src="icons/contact.png"alt=contact>
                 <img id="contactImg"src="icons/github.png"alt="github">
                 <img id="contactImg"src="icons/"alt="insta"> -->
@@ -177,7 +176,7 @@
                 <img src="icons/c-sharp.png">
                 <img src="icons/database.png">
                 <img src="icons/azure.png">
-                <img src="icons/css-3.png">
+                <img src="icons/css.png">
                 <img src="icons/html.png">
                 <img src="icons/java-script.png">
             </div>
@@ -205,13 +204,16 @@
         </div>
 
         <!--Bin-->
-        <div class="window-container"id="bin">
+        <div class="window-container"id="trashcan">
             <div class="titlebar">
                 Bin
-                <button class="close"id="btnBin">X</button>
+                <button class="close"id="btnTrash">X</button>
             </div>
-            <div class="content-container">
-                <img src="icons/trash.png">
+            <div class="content-container"id="trashContainer">
+                <div class="trashText">
+                    <h1>You're trash</h1>
+                </div>
+                <img src="icons/trash.png"id="trashImg">
             </div>
         </div>
 
@@ -221,8 +223,18 @@
                 Meow
                 <button class="close"id="btnMeow">X</button>
             </div>
-            <div class="content-container"id="meow">
-
+            <div class="content-container"id="meowContainer">
+                <div class="catTitle">
+                    <h1>Meet the cats!</h1>
+                </div>
+                <div class ="catText">
+                <h3>Medusa & Zinja</h3>
+                <!-- <h3>Zinja</h3> -->
+                </div>
+                <div class="imgCats">
+                    <img src="images/medusa pixel.png"alt="medusa"id="medusaImg">
+                    <img src="images/zinja pixel.png"alt="zinja"id="zinjaImg">
+                </div>
             </div>
         </div>
         

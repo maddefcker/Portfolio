@@ -16,7 +16,7 @@ openWindow("iconProj","projects");
 openWindow("iconMail","mail");
 openWindow("iconTech","techstack");
 openWindow("iconRef","references");
-openWindow("iconTrash","bin");
+openWindow("iconTrash","trashcan");
 openWindow("iconMeow","meow");
 
 //funktion för att stänga fönster
@@ -35,7 +35,7 @@ closeWindow("btnProj","projects");
 closeWindow("btnMail","mail");
 closeWindow("btnTech","techstack");
 closeWindow("btnRef","references");
-closeWindow("btnBin","bin");
+closeWindow("btnTrash","trashcan");
 closeWindow("btnMeow","meow");
 
 //funktion för att kunna dra runt alla olika windows - fungerar bara på aboutme
@@ -74,7 +74,7 @@ function stopDragging(){
 function popup(buttonId,popupId){
     const cv = document.getElementById(buttonId);
     const popupwindow = document.getElementById(popupId);
-    
+
     cv.addEventListener("click",()=>{
         popupwindow.style.display="block";
         popupwindow.classList.remove("hide");
