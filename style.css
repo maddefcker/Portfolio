@@ -44,13 +44,13 @@ button{
     inset: 0;
 }
 
-/*Standard för alla h1 rubriker*/
-.content-container h1{
+/*NY Standard för alla h1 rubriker*/
+h1{
     color: black;
-    font-size: 2.3vh;
+    font-size: 2.2vh;
     font-family: "Press Start 2P", system-ui;
     text-align: center;
-    margin-top: 5px;
+    margin-top: 10%;
 }
 
 /*Standard för alla h3 rubriker*/
@@ -134,7 +134,7 @@ p{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
+}
 
     /*about me*/
     #me{
@@ -149,7 +149,7 @@ p{
 
     h3{
         margin-right: 15px;
-        font-size: 1.1rem;
+        font-size: 1rem;
         font-family:"tahoma", sans-serif;
         font-style: normal;
         text-align: center;
@@ -163,7 +163,7 @@ p{
         text-align: center;
         font-size: 1rem;
     }
-} 
+/* }  */
 
 /*contact*/
 #contact{
@@ -203,12 +203,6 @@ p{
             font-size: 1rem;
         }
 
-    }
-
-    h1{
-        text-align: center;
-        margin-top: 10%;
-        font-size: 1rem;
     }
 }
 
@@ -268,6 +262,7 @@ p{
     #projContainer{
         display: flex;
         flex-direction: column;
+        justify-content: start;
     }
 
     projectText{
@@ -277,7 +272,10 @@ p{
     }
 
     .projectImages{
+        flex-direction: row;
         img{
+            margin-top: 20px;
+            margin-right: 30px;
             padding: 10px;
             border: 5px solid pink;
             width: 170px;
@@ -342,6 +340,10 @@ p{
 #mail{
     height: 500px;
 
+    #mailContainer{
+        display: flex;
+        flex-direction: column;
+    }
     #btnSubmit{
         padding: 5px;
         width: 20%;
@@ -358,7 +360,7 @@ p{
 .mailForm{
     border: 0px solid black;
     float: center;
-    margin-top: 12%;
+    margin-top: 0%;
     margin-inline-end: 10%;
     }
 
