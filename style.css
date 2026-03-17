@@ -85,6 +85,7 @@ p{
     }
 
     p{
+        font-size: 1.5vh;
         text-align: center;
         color: white;
         text-shadow: 2px 2px 2px #000000;
@@ -458,7 +459,9 @@ input[type=text],input[type=email],input[type=tel],select,textarea{
     text-align: right;
     position: absolute;
     top:70px;
-    right:150px;
+    /* right:150px; */
+
+    right: 10%;
     cursor: pointer;
 
     h3{
@@ -476,7 +479,7 @@ input[type=text],input[type=email],input[type=tel],select,textarea{
 }
 
 #weatherIcon{
-    width: clamp(80px, 5vw, 150px);
+    width: clamp(100px, 5vw, 150px);
 }
 
 /*för att gömma flik/window*/
