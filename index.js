@@ -1,61 +1,23 @@
-//funktion för att öppna window
-function openWindow(iconId, windowId){
-    const icon = document.getElementById(iconId);
-    const window = document.getElementById(windowId);
-
+//NY bättre openwindow funktion
+document.querySelectorAll(".icon").forEach(icon =>{
     icon.addEventListener("dblclick",()=>{
-        window.style.display = "block";
-        window.classList.remove("hide"); 
-    })
-}
+        const windowId = icon.dataset.window;
+        const window = document.getElementById(windowId);
 
-//kalla på funkctionen - öppna fönster
-openWindow("iconContact","contact");
-openWindow("iconAbout","about");
-openWindow("iconProj","projects");
-openWindow("iconMail","mail");
-openWindow("iconTech","techstack");
-openWindow("iconRef","references");
-openWindow("iconTrash","trashcan");
-openWindow("iconMeow","meow");
-
-//funktion för att stänga fönster
-function closeWindow(buttonId,windowId){
-    const btn = document.getElementById(buttonId);
-    const window = document.getElementById(windowId);
-
-    btn.addEventListener("click",()=>{
-        window.classList.toggle("hide");
-    })
-}
-//kalla på funktionen - stäng ner fönster
-closeWindow("btnAbout","about");
-closeWindow("btnContact","contact");
-closeWindow("btnProj","projects");
-closeWindow("btnMail","mail");
-closeWindow("btnTech","techstack");
-closeWindow("btnRef","references");
-closeWindow("btnTrash","trashcan");
-closeWindow("btnMeow","meow");
-
-//funktion för nav-bar - öppna fönster
-function navOpen(buttonId,windowId){
-    const window = document.getElementById(windowId);
-    const nav = document.getElementById(buttonId);
-
-    nav.addEventListener("click",()=>{
         window.style.display = "block";
         window.classList.remove("hide");
-    })
-}
+    });
+});
 
-//kalla på funktionen för nav
-navOpen("navAbout","about");
-navOpen("navContact","contact");
-navOpen("navProj","projects");
-navOpen("navEmail","mail");
-navOpen("navRef","references");
-navOpen("navTech","techstack");
+
+//NY bättre closewindow function
+document.querySelectorAll(".close").forEach(button=>{
+    button.addEventListener("click",()=>{
+        const window = button.closest(".window-container");
+        window.classList.add("hide");
+    });
+});
+
 
 //funktion för att kunna dra runt alla olika windows - fungerar bara på aboutme
 
