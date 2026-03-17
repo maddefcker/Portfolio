@@ -19,9 +19,8 @@ document.querySelectorAll(".close").forEach(button=>{
 });
 
 
-//funktion för att kunna dra runt alla olika windows - fungerar bara på aboutme
 
-//NY TEST FUNKTION
+//Funktion för att dra runt alla olika windows
  let draggableElement = document.querySelectorAll(".window-container").forEach(el =>{
     makeDraggable(el);
  });
@@ -87,8 +86,6 @@ closePopup("cancel","cv");
 const apiKey ='f93e6b4c871724ed933a2c8d81f40439';
 const apiUrl = 'https://api.openweathermap.org/data/2.5/weather';
 
-// const locationInput = document.getElementById("locationInput");
-// const searchButton = document.getElementById("searchButton");
 const locationElement = document.getElementById("location");
 const temperatureElement = document.getElementById("temperature");
 const descriptionElement = document.getElementById("description");
