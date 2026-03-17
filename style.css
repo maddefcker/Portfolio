@@ -59,7 +59,9 @@ button{
     gap:20px;
 
     img{
-        width: 48px;
+        /* width: 48px;
+        height: auto; */
+        width: clamp(32px, 5vw, 48px); /*för responsivitet*/
     }
 
     p{
@@ -67,27 +69,6 @@ button{
         color: white;
         text-shadow: 2px 2px 2px #000000;
     }
-}
-
-
-/*desktop icons rad 2*/
-.icon-container1{
-    width: 80px;
-    text-align: center;
-    color: white;
-    position: absolute;
-    top:40px;
-    left:120px;
-    cursor: pointer;
-    
-    img{
-        width: 48px;
-    }
-    p{
-        color: white;
-        text-shadow: 2px 2px 2px #000000;
-    }
-
 }
 
 /*fönster/flikar*/
@@ -101,7 +82,7 @@ button{
     border: 2px solid #000;
     display: none;
 
-    cursor: grab;  /*sätt på endast titlebar senare*/
+    cursor: grab;
 }
 
 /*window border w title*/
@@ -143,11 +124,13 @@ button{
         height: 90%;
         width: 50%;
         object-fit: cover;
+
+        /* width: clamp(32px, 30vw, 450px); */
     }
 
     aboutText{
         height: 90%;
-        width: 50%;
+        width: 50%; 
         margin-top: 20px;
         margin-right: 15px;
         border: 0px solid black;
@@ -502,9 +485,11 @@ button{
     }
 
     img{
-        height: 100%;
+        /* height: 100%;
         max-height: 35px;
-        width: auto;
+        width: auto; */
+
+        width: clamp(20px, 5vw, 35px);
     }
 
     #navMe{
@@ -513,11 +498,6 @@ button{
         font-family: "tahoma", sans-serif;
     }
 }
-
-/* #darkMode{
-    position: fixed;
-    margin-left: 92%;
-} */
 
 
 /*Väder-widget*/
@@ -549,7 +529,8 @@ button{
 }
 
 #weatherIcon{
-    width:7rem;
+    width: clamp(80px, 5vw, 150px);
+    /* width:7rem; */
     background-color: transparent;
 }
 
@@ -561,16 +542,38 @@ button{
 }
 
 
+
 /*mobilver*/
-/* @media(max-width: 700px){
+/* @media (max-width: 600px){
     .desktop{
-        transform: scale(0,8);
-        transform-origin: top left;
+        font-size: 25px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .icon-container img{
+    width: 50px;
+    }
+
+    .start-menu img{
+        width: 65px;
     }
 } */
 
-@media only screen and (max-width: 600px){
-    .icon-container{
-        
+@media (600px > width){
+    .desktop{
+        font-size: 25px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .window-container, .content-container, .titlebar{
+        width: 300px;
+    }
+
+    .icon-container img{
+    width: 50px;
+    }
+
+    .start-menu img{
+        width: 65px;
     }
 }
