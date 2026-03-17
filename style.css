@@ -43,6 +43,29 @@ button{
     inset: 0;
 } 
 
+
+/*MAIN / DESKTOP ICONS*/
+.main{
+    width: 80px;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top:40px;
+    left:20px;
+    cursor: pointer;
+
+    img{
+        width: 48px;
+    }
+
+    p{
+        color: white;
+        text-shadow: 2px 2px 2px #000000;
+    }
+}
+
+
+
 /*desktop icons*/
 .icon-container{
     width: 80px;

@@ -17,25 +17,27 @@
     </head>
     <body>   
         <!--startsida-->
-    <div class="desktop">
-        <div class="icon-container">
-            <!--Desktop ikoner/program-->
-            <img src="icons/smile.png"alt="smile"id="iconAbout" class="icon"data-window="about">
-            <p>About me</p>
+    <main class="desktop">
+            <div class="icon-container">
+                <!--Desktop ikoner/program-->
+                <img src="icons/smile.png"alt="smile"id="iconAbout" class="icon"data-window="about">
+                <p>About me</p>
 
-            <img src="icons/contact.png"alt="contact"id="iconContact"class="icon"data-window="contact">
-            <p>Contact</p>
+                <img src="icons/contact.png"alt="contact"id="iconContact"class="icon"data-window="contact">
+                <p>Contact</p>
 
-            <img src="icons/star.png"alt="projects" id="iconProj"class="icon"data-window="projects">
-            <p>Projects</p>
+                <img src="icons/star.png"alt="projects" id="iconProj"class="icon"data-window="projects">
+                <p>Projects</p>
 
-            <img src="icons/email.png"alt="mail"id="iconMail"class="icon"data-window="mail">
-            <p>Email</p>
+                <img src="icons/email.png"alt="mail"id="iconMail"class="icon"data-window="mail">
+                <p>Email</p>
 
-            <img src="icons/cat.png"alt="cats"id="iconMeow"class="icon"data-window="meow">
-            <p>Meow</p>
-        </div>
+                <img src="icons/cat.png"alt="cats"id="iconMeow"class="icon"data-window="meow">
+                <p>Meow</p>
 
+                <img src="icons/love.png"alt="tech"id="iconTech"class="icon"data-window="techstack">
+                <p>Techstack</p>
+            </div>
         <!--Desktop ikoner/program rad 2-->
         <div class="icon-container1">
             <img src="icons/love.png"alt="tech"id="iconTech"class="icon"data-window="techstack">
@@ -237,6 +239,8 @@
         </div>
         
 
+        <!--NAVIGATION/FOOTER-->
+        <nav>
         <div class="start-menu" id="start-menu">
             <button data-window="madeleine"title="Madeleine"><img src="images/me-pixel.png"></button>
             <!-- <button data-window="home">Home</button> -->
@@ -246,13 +250,13 @@
             <button data-window="mail"title="Email"class="icon"><img src="icons/email.png"id="navEmail"></button>
             <button data-window="references"title="References"class="icon"><img src="icons/references.png"id="navRef"></button>
             <button data-window="techstack"title="Techstack"class="icon"><img src="icons/love.png"id="navTech"></button>
-
             <!--Dark mode-->
             <!-- <div class="darkMode"id="darkMode">
                 <button data-window="darkMode"title="dark mode"><img src="icons/moon1.png"alt="dark mode"></button>
             </div> -->
             <p id="navMe">Madeleine</p>
         </div>
+        </nav>
 
         <!--Väder app-->
         <div class="weatherApp"id="weatherApp">
@@ -264,8 +268,7 @@
                     <p id="wind-speed"></p>
                 </div>
         </div>
-
-    </div>
+    </main>
     
     <!--Länka till JS fil-->
     <script src="index.js"></script>
