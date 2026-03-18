@@ -1,4 +1,4 @@
-//NY bättre openwindow funktion
+//openwindow funktion
 document.querySelectorAll(".icon").forEach(icon =>{
     icon.addEventListener("dblclick",()=>{
         const windowId = icon.dataset.window;
@@ -10,7 +10,7 @@ document.querySelectorAll(".icon").forEach(icon =>{
 });
 
 
-//NY bättre closewindow function
+//closewindow function
 document.querySelectorAll(".close").forEach(button=>{
     button.addEventListener("click",()=>{
         const window = button.closest(".window-container");

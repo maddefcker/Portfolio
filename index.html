@@ -66,11 +66,6 @@
             <div class="titlebar">
                 About me
                 <button class="close"id="btnAbout">X</button>
-
-                <!--Resterande knappar att addera senare-->
-                <!-- <button class="">▢</button>
-                <button class="minimize">-</button> -->
-
             </div>
             <div class="content-container">
                 <img id="me"src="images/me.png"alt="me">
@@ -94,7 +89,6 @@
             <div class="content-container"id="contact-container">
                 <contactText>
                     <h1 id="title">Find me</h1>
-                    <!-- <h1 id="about-h1">Find me</h1> -->
                 </contactText>
                 <div class="socials">
                     <a href="https://www.linkedin.com/in/madeleine-karlsson-a18278193/"target="_blank"><img src="icons/linkedin1.png"alt="linkedin"></a>
@@ -132,7 +126,9 @@
                 <button class="close"id="btnProj">X</button>
             </div>
             <div class="content-container"id="projContainer">
-                    <h1 id="title">My Projects</h1>
+                <div class="text-container">
+                  <h1 id="title">My Projects</h1>  
+                </div>
                 <div class="projectImages">
                     <img src="icons/sticky-note.png"alt="to do app">
                     <img src="icons/ipod.png"alt="music player">
@@ -200,9 +196,9 @@
                 <div class="refText"id="refText">
                     <h1 id="title">References</h1>
                     <h4>Reference 1</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus necessitatibus corrupti, assumenda velit dolor cumque dolorum ipsam perferendis iure aliquid!</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia sint perferendis quisquam voluptatem maxime ducimus.</p>
                     <h4>Reference 2</h4>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat labore architecto sunt rerum, qui aspernatur sit nesciunt odit unde nulla totam similique sed voluptatem pariatur.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi blanditiis tempore accusantium. Laboriosam consequuntur odio, corrupti porro inventore explicabo adipisci?</p>
                 </div>
             </div>
         </div>
@@ -227,30 +223,19 @@
                 Meow
                 <button class="close"id="btnMeow">X</button>
             </div>
-              <div class="catTitle">
-                    <h1 id="title">Meet the cats!</h1>
-                </div>
             <div class="content-container"id="meowContainer">
-                <!-- <div class="catTitle">
-                    <h1>Meet the cats!</h1>
-                </div> -->
-                <div class ="catText">
-                    <!--Byt ut text mot två personliga stickers med namn på-->
-                <!-- <h3>Medusa & Zinja</h3> -->
+                <div class="catTitle">
+                    <h1 id="title">Meet the cats!</h1>
                 </div>
                 <div class="imgCats">
                     <div class="medusa-container">
                         <img src="images/medusa pixel.png"alt="medusa"id="medusaImg">
                         <p>Medusa</p>
                     </div>
-                    <!-- <img src="images/medusa pixel.png"alt="medusa"id="medusaImg">
-                    <p>Medusa</p> -->
                     <div class="zinja-container">
                         <img src="images/zinja pixel.png"alt="zinja"id="zinjaImg">
                         <p>Zinja</p>
                     </div>
-                    <!-- <img src="images/zinja pixel.png"alt="zinja"id="zinjaImg">
-                    <p>Zinja</p> -->
                 </div>
             </div>
         </div>
@@ -267,11 +252,6 @@
             <button data-window="mail"title="Email"class="icon"><img src="icons/email.png"id="navEmail"></button>
             <button data-window="references"title="References"class="icon"><img src="icons/references.png"id="navRef"></button>
             <button data-window="techstack"title="Techstack"class="icon"><img src="icons/love.png"id="navTech"></button>
-            <!--Dark mode-->
-            <!-- <div class="darkMode"id="darkMode">
-                <button data-window="darkMode"title="dark mode"><img src="icons/moon1.png"alt="dark mode"></button>
-            </div> -->
-            <!-- <p id="navMe">Madeleine</p> -->
         </div>
         </nav>
 

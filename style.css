@@ -50,7 +50,7 @@ button{
     font-family: "Press Start 2P", system-ui;
     font-size: 1.8vh;
     text-align: center;
-    margin-top: 10%;
+    margin-top: 0%;
 }
 
 /*Standard för alla h3 rubriker*/
@@ -63,6 +63,7 @@ h3{
 p{
     color:black;
     font-family:"tahoma", sans-serif;
+    font-size: 13px;
 }
 
 /*desktop icons*/
@@ -113,8 +114,6 @@ p{
 }
 
 
-
-
 /*window border w title*/
 .titlebar{
     background-color: pink;
@@ -123,14 +122,13 @@ p{
     /* background-color: linear-gradient(#0a246a, #3a6ea5); */
     color: black;
     padding: 4px;
-    /* font-weight: bold; */
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /*separera titel & knapp*/
 
      button.close{
         color:black;
         position: relative;
-        z-index: 1000;
+        z-index: 1000; /*fixa*/
     }
 }
 
@@ -182,13 +180,6 @@ p{
 #contact-container{
     display: flex;
     flex-direction: column;
-    justify-content:start;
-
-    contactText{
-        border: 0px solid black;
-        width: 100%;
-        padding-bottom: 20px;
-    }
 
     /*socials länkar*/
     .socials{
@@ -204,13 +195,16 @@ p{
     }
 
     #cvContainer{
-        border: 0px solid black;
         margin-top: 10%;
 
         #btnCV{
+            background-color: pink;
             margin-top: 5%;
             font-family: "tahoma", sans-serif;
             font-size: 1rem;
+        }
+        #btnCV:hover{
+            background-color: rgb(255, 213, 220);
         }
 
     }
@@ -265,8 +259,16 @@ p{
 }
 
 
-/*projects*/
+/*PROJECTS*/
+#projects{
+    height: 500px;
+}
+#projContainer{ /*sätt alla window containers till display flex & column för att spara kod?*/
+    display: flex;
+    flex-direction: column;
+}
     .projectImages{
+        margin-top: 10px;
         display: grid;
         grid-template-columns: 80px 80px;
         row-gap: 100px;
@@ -293,7 +295,7 @@ p{
         margin-left: 20px;
     }
     #refText{
-        padding:5%;
+        margin: 10px;
     }
     h1{
         text-align: left;
@@ -301,10 +303,6 @@ p{
     h4{
         font-family: "Press Start 2P", system-ui;
         font-size: 12px;
-    }
-    p{
-        font-family: "tahoma", sans-serif;
-        font-size: 13px;
     }
 }
 
@@ -315,7 +313,6 @@ p{
     width: 400px;
     h1{
         margin-top: -60%;
-        border: 0px solid black;
     }
     .tech-icons{
         margin-top: 18%;
@@ -388,23 +385,24 @@ input[type=text],input[type=email],input[type=tel],select,textarea{
 
 }
 
+#meowContainer{
+     height: 460px;
+    display: flex;
+    flex-direction: column;
+}
 #meow{
     height: 460px;
     .imgCats{
         border: 0px solid black;
         display: flex;
+        flex-direction: row;
         margin-top: 100px;
         text-align: center;
     }
 
     img{
         margin-left: 10%;
-        margin-bottom: 5%;
         height: 170px;
-    }
-
-    img:hover{
-
     }
     p{
         font-family: "Press Start 2P", system-ui;
