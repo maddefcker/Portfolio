@@ -61,6 +61,15 @@
                 </div>
             </div>
 
+            <!--Madeleine icon navbar-->
+            <div class="window-container">
+                <div class="titlebar">Madeleine</div>
+                <button class="close">X</button>
+                <div class="content-container">
+
+                </div>
+            </div>
+
          <!--About me-->
         <div class="window-container"id="about">
             <div class="titlebar">
@@ -152,8 +161,8 @@
                     <form action="https://formsubmit.co/madeleine.karlsson99@gmail.com"method="POST">
                         <input type="text"id="name"name="name"placeholder="Firstname"required>
                         <input type="text"id="lname"name="name"placeholder="Lastname"required>
-                        <input type="email"id="email"email="email"placeholder="Email"required>
-                        <input type="tel"id="phone"tel="phone"placeholder="Phone number">
+                        <input pattern="[a-z0-9._]+@[a-z0-9._]+\.[a-z]{2,}$"type="email"id="email"email="email"placeholder="Email"required>
+                        <input pattern="[0-9].{9}"type="tel"id="phone"tel="phone"placeholder="Phone number"title="Must contain 10 digits"required>
                         <textarea id="message" id="message" name="message" rows="5"cols="45"required>Your message here...</textarea>
                         <div class="btnSubmit">
                             <button type ="submit"id="btnSubmit">Send</button>
