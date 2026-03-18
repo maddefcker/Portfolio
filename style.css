@@ -10,6 +10,7 @@
     /* background-image: url(https://sadhost.neocities.org/images/tiles/stars5.gif); */
     background-image: url(https://dn721309.ca.archive.org/0/items/theoriginalfilesofsomewindowswallpapers/bliss%20600dpi.jpg);
     background-size: cover;
+    
     background-position: center;
 
     position: relative;
@@ -138,7 +139,7 @@ p{
 /*container standard-layout*/
  .content-container{
     color: black;
-    border: 2px solid white;
+    border: 0px solid white;
 
     display: flex;
     flex-direction: row;
@@ -366,7 +367,7 @@ p{
         float: right;
         margin-top: 2%;
         background-color: pink;
-        font-family: "tahoma", sans-serif;
+
     }
     #btnSubmit:hover{
         background-color: rgb(255, 213, 220);
@@ -385,6 +386,7 @@ input[type=text],input[type=email],input[type=tel],select,textarea{
     padding: 10px;
     float: right;
     margin-top:2%;
+    font-family: "tahoma", sans-serif;
 }
 
 #trashcan{
@@ -406,24 +408,22 @@ input[type=text],input[type=email],input[type=tel],select,textarea{
 
 #meow{
     height: 460px;
-
-    #meowContainer{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3,1fr); 
-        grid-column-gap: 0px;
-        grid-row-gap:0px;
-
-        .catTitle{grid-area: 1 / 1 / 2 / 4;};
-        
-        .catText{grid-area: 2 / 2 / 3 / 4;};
-        
-        .imgCats{grid-area:3 / 4 / 4 / 1;};
+    .imgCats{
+        border: 0px solid black;
+        display: flex;
+        margin-top: 100px;
+        text-align: center;
     }
+
     img{
-        margin-left: 5%;
+        margin-left: 10%;
         margin-bottom: 5%;
-        height: 200px;
+        height: 170px;
+    }
+    p{
+        font-family: "Press Start 2P", system-ui;
+        font-size: 12px;
+        color: black;
     }
 }
 
