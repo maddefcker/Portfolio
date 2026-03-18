@@ -47,7 +47,7 @@ button{
 /*NY Standard för alla h1 rubriker*/
 h1{
     color: black;
-    font-size: 2.2vh;
+    font-size: 1.8vh;
     font-family: "Press Start 2P", system-ui;
     text-align: center;
     margin-top: 10%;
@@ -92,11 +92,11 @@ p{
     }
 }
 
-/*fönster/flikar*/
+/*fönster/flikar standard utseende & placering*/
 .window-container{
     position: absolute;
     top: 120px;
-    left: 200px;
+    left: 250px;
     width: 520px;
     height: 600px;
     background-color: #ECE9D8;
@@ -105,6 +105,15 @@ p{
 
     cursor: grab;
 }
+
+/*about me window placering*/
+#about{
+    top:90px;
+    left: 100vh;
+}
+
+
+
 
 /*window border w title*/
 .titlebar{
@@ -289,6 +298,8 @@ p{
 /*References container*/
 #references{
     height: 350px;
+    top:200px;
+    left:300px;
 
     #refIcons{
         margin-bottom: -80px;
@@ -342,6 +353,8 @@ p{
 /*annan storlek på mail-window*/
 #mail{
     height: 500px;
+    top: 250px;
+    left: 950px;
 
     #mailContainer{
         display: flex;
@@ -489,7 +502,7 @@ input[type=text],input[type=email],input[type=tel],select,textarea{
 
 
 
-/*mobilver*/
+/*MOBILE ver*/
 @media (600px > width){
     .desktop{
         grid-template-columns: repeat(2, 1fr);
@@ -507,4 +520,11 @@ input[type=text],input[type=email],input[type=tel],select,textarea{
     .start-menu img{
         width: 65px;
     }
+
+    .icon-container p{
+        font-size: 15px;
+    }
+
 }
+
+/*TABLET ver*/
