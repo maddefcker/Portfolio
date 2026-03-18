@@ -45,11 +45,10 @@ button{
     inset: 0;
 }
 
-/*NY Standard för alla h1 rubriker*/
-h1{
-    color: black;
-    font-size: 1.8vh;
+/*Standard för alla h1 rubriker*/
+#title{
     font-family: "Press Start 2P", system-ui;
+    font-size: 1.8vh;
     text-align: center;
     margin-top: 10%;
 }
@@ -267,34 +266,17 @@ p{
 
 
 /*projects*/
-#projects{
-    width: 600px;
-
-    #projContainer{
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-    }
-
-    projectText{
-        border: 0px solid black;
-        width: 100%;
-        /* padding-bottom: 20px; */
-    }
-
     .projectImages{
+        display: grid;
+        grid-template-columns: 80px 80px;
+        row-gap: 100px;
+        column-gap: 150px;
         border: 0px solid black;
-        /* flex-direction: row; */
+        
         img{
-            margin-top: 30px;
-            margin-right: 13%;
-            margin-left: auto;
-            border: 2px solid black;
-            width: 30%;
-            float: right;
+            width: 120px;
         }
     }
-}
 
 /*References container*/
 #references{
@@ -419,6 +401,10 @@ input[type=text],input[type=email],input[type=tel],select,textarea{
         margin-left: 10%;
         margin-bottom: 5%;
         height: 170px;
+    }
+
+    img:hover{
+
     }
     p{
         font-family: "Press Start 2P", system-ui;
