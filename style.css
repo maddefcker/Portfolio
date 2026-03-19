@@ -1,8 +1,5 @@
 /*bakgrundsbild/startskärm*/
 .desktop{
-    /* height: 100vh;
-    width: 100vw; */
-
     height: 95vh;
     width: 100%;
 
@@ -84,7 +81,7 @@ p{
     gap:20px;
 
     img{
-        width: clamp(50px, 5vw, 48px); /*för responsivitet*/
+        width: clamp(50px, 5vw, 48px);
     }
 
     p{
@@ -121,8 +118,6 @@ p{
 .titlebar{
     background-color: pink;
     font-family:"tahoma", sans-serif;
-    /* background-color: #0a246a; */
-    /* background-color: linear-gradient(#0a246a, #3a6ea5); */
     color: black;
     padding: 4px;
     display: flex;
@@ -131,7 +126,6 @@ p{
      button.close{
         color:black;
         position: relative;
-        /* z-index: 1000; fixa */
         z-index: 10;
     }
 }
@@ -155,8 +149,6 @@ p{
         height: 90%;
         width: 50%;
         object-fit: cover;
-
-        /* width: clamp(32px, 30vw, 450px); */
     }
 
     h3{
@@ -265,7 +257,7 @@ p{
 #projects{
     height: 500px;
 }
-#projContainer{ /*sätt alla window containers till display flex & column för att spara kod?*/
+#projContainer{
     display: flex;
     flex-direction: column;
 }
@@ -384,7 +376,6 @@ input[type=text],input[type=email],input[type=tel],select,textarea{
         justify-content:space-evenly;
     } 
     img{
-        /* width: 40%; */
         width: clamp(150px, 5vw, 170px);
     }
 
@@ -406,7 +397,6 @@ input[type=text],input[type=email],input[type=tel],select,textarea{
     }
     img{
         margin-left: 10%;
-        /* height: 170px; */
         width: clamp(150px, 5vw, 170px);
     }
     p{
@@ -455,7 +445,6 @@ input[type=text],input[type=email],input[type=tel],select,textarea{
     text-align: right;
     position: absolute;
     top:70px;
-    /* right:150px; */
 
     right: 10%;
     cursor: pointer;
