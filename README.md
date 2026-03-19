@@ -21,8 +21,8 @@ Also includes a weather API that shows the weather in the city where i live.
 - Made with desktop first in mind but made responsive to be mobile friendly using media queries in CSS.
 
 ## Future improvments
-- Change the weather button's look depending on the weather it's currently displaying. Ex clouds if it is cloudy outside.
-- 
+- Change the weather button's look depending on the weather it's currently displaying. Ex clouds if it is cloudy outside. 
+- Add darkmode as an option in the navbar/footer section.
 
 ## Links
 Links to resources i've used in this project
