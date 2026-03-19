@@ -18,7 +18,11 @@ Also includes a weather API that shows the weather in the city where i live.
 - Links to my social medias - LinkedIn, GitHub & Instagram.
 - Weather widget to display the weather in my city (Norrtälje).
 - Interactive draggable elements using mouse events in JS.
-- Responsive layout made with media queries in CSS.
+- Made with desktop first in mind but made responsive to be mobile friendly using media queries in CSS.
+
+## Future improvments
+- Change the weather button's look depending on the weather it's currently displaying. Ex clouds if it is cloudy outside.
+- 
 
 ## Links
 Links to resources i've used in this project
