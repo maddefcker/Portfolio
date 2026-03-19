@@ -451,7 +451,6 @@ input[type=text],input[type=email],input[type=tel],select,textarea{
 
     h3{
         font-size: 1.1rem;
-        /* color: white; */
         color: #153677;
         text-align: left;
         margin-top: -80px;
