@@ -52,7 +52,7 @@
 
                 <div class="icon">
                     <img src="icons/references.png"alt="references"id="iconRef"class="icon"data-window="references">
-                    <p>References</p>
+                    <p>Testimonials</p>
                 </div>
 
                 <div class="icon">
@@ -83,7 +83,7 @@
                     <h3>Name: <span>Madeleine</span></h3>
                     <h3>Birthyear: <span>1999</span></h3>
                     <h3>Location: <span>Norrtälje, Sweden</span></h3>
-                    <h3>Hobbies: <span>Makeup, clothing, photography, nails ..</span></h3>
+                    <h3>Hobbies: <span>Makeup, clothing, photography, gaming, nails ..</span></h3>
                     <h3>Pets: <span>Proud cat mom to a sphynx named Medusa and a ragdoll named Zinja</span></h3>
                 </aboutText>
             </div>
@@ -162,7 +162,7 @@
                         <input type="text"id="name"name="name"placeholder="Firstname"required>
                         <input type="text"id="lname"name="name"placeholder="Lastname"required>
                         <input pattern="[a-z0-9._]+@[a-z0-9._]+\.[a-z]{2,}$"type="email"id="email"email="email"placeholder="Email"required>
-                        <input pattern="[0-9].{9}"type="tel"id="phone"tel="phone"placeholder="Phone number"title="Must contain 10 digits"required>
+                        <input pattern="[0-9]"type="tel"id="phone"tel="phone"placeholder="Phone number"title="Only digits allowed"required>
                         <textarea id="message" id="message" name="message" rows="5"cols="45"required>Your message here...</textarea>
                         <div class="btnSubmit">
                             <button type ="submit"id="btnSubmit">Send</button>
@@ -194,7 +194,7 @@
         <!--References-->
         <div class="window-container"id="references">
             <div class="titlebar">
-                References
+                Testimonials
                 <button class="close"id="btnRef">X</button>
             </div>
             <div class="content-container"id="refContainer">
@@ -203,10 +203,10 @@
                     <img src="icons/girl.png">
                 </div>
                 <div class="refText"id="refText">
-                    <h1 id="title">References</h1>
-                    <h4>Reference 1</h4>
+                    <h1 id="title">Testimonials</h1>
+                    <h4>Title 1</h4>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia sint perferendis quisquam voluptatem maxime ducimus.</p>
-                    <h4>Reference 2</h4>
+                    <h4>Title 2</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi blanditiis tempore accusantium. Laboriosam consequuntur odio, corrupti porro inventore explicabo adipisci?</p>
                 </div>
             </div>
@@ -220,7 +220,7 @@
             </div>
             <div class="content-container"id="trashContainer">
                 <div class="trashText">
-                    <h1 id="title">You're trash</h1>
+                    <h1 id="title">[Empty]</h1>
                 </div>
                 <img src="icons/trash.png"id="trashImg">
             </div>
@@ -259,7 +259,7 @@
             <button data-window="contact"title="Contact"class="icon"><img src="icons/contact.png"id="navContact"></button>
             <button data-window="projects"title="Projects"class="icon"><img src="icons/star.png"id="navProj"></button>
             <button data-window="mail"title="Email"class="icon"><img src="icons/email.png"id="navEmail"></button>
-            <button data-window="references"title="References"class="icon"><img src="icons/references.png"id="navRef"></button>
+            <button data-window="references"title="Testimonials"class="icon"><img src="icons/references.png"id="navRef"></button>
             <button data-window="techstack"title="Techstack"class="icon"><img src="icons/love.png"id="navTech"></button>
         </div>
         </nav>
