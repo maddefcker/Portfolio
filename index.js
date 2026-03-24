@@ -108,3 +108,59 @@ function fetchWeather(){
         })
 }
 
+
+//Cat spawn
+const btn = document.getElementById("spawnBtn");
+const area = document.querySelector(".spawn-cats");
+
+const medusa = document.getElementById("medusa");
+const zinja = document.getElementById("zinja");
+
+
+btn.addEventListener("dblclick",()=>{
+    //animation
+    spawnCat(medusa);
+    spawnParticles(medusa);
+
+    spawnCat(zinja);
+    spawnParticles(zinja);
+});
+
+    function spawnCat(cat){
+        cat.classList.remove("spawn");
+        void cat.offsetWidth;
+        cat.classList.add("spawn");
+    }
+
+    //spawn pixel-partiklar
+    function spawnParticles(cat){
+    //Få partiklarna att hålla sig till bildens position
+    const rect = cat.getBoundingClientRect();
+    const parentRect = area.getBoundingClientRect();
+
+    const centerX = rect.left - parentRect.left + rect.width/2;
+    const centerY = rect.top - parentRect.top + rect.height/2;
+
+    for(let i=0;i<12;i++){
+        const p = document.createElement("span");
+        p.classList.add("particle");
+
+        const x = (Math.random()*160-80)+"px";
+        const y = (Math.random()*160-80)+"px";
+
+        p.style.setProperty("--x",x);
+        p.style.setProperty("--y",y);
+
+        p.style.left = centerX + "px";
+        p.style.top = centerY + "px";
+
+        area.appendChild(p);
+
+        setTimeout(()=>p.remove(),500);
+    }
+    }
+
+
+
+
+
