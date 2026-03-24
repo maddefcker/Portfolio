@@ -1,7 +1,16 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
 /*bakgrundsbild/startskärm*/
 .desktop{
-    height: 95vh;
+    min-height: 100vh;
     width: 100%;
+
+    display: grid;
 
     /*DARK MODE(?)*/
     /* background-image: url(https://sadhost.neocities.org/images/tiles/stars5.gif); */
@@ -11,12 +20,11 @@
     background-position: center;
 
     position: relative;
-    overflow: hidden;
 }
 
 /*Gammal skräm effekt, appliceras på hela sidan*/
 body::after{
-     content:"";
+    content:"";
     position: absolute;
     inset:0;
     background: repeating-linear-gradient(
@@ -37,7 +45,8 @@ button{
 }
 
 /*fönster/flikar/window*/
-.icon-container,
+
+/* .icon-container, */
 .window-container,
 .content-container{
     position: absolute;
@@ -47,25 +56,29 @@ button{
 /*Standard för alla h1 rubriker*/
 #title{
     font-family: "Press Start 2P", system-ui;
-    font-size: 1.8vh;
     text-align: center;
     margin-top: 0%;
+
+    font-size: clamp(0.9rem,2vw,1.3rem);
 }
 
 /*Standard för alla h3 rubriker*/
 h3{
     color:black;
-    font-size: 1vh;
+    font-size: clamp(0.5rem,1vw,1rem);
     font-family:"tahoma", sans-serif;
 }
 /*Standard för alla paragrafer*/
 p{
     color:black;
     font-family:"tahoma", sans-serif;
-    font-size: 13px;
+    /* font-size: 13px;  */
+
+    font-size: clamp(0.7rem,1vw,2.5rem);
 }
 
 /*desktop icons*/
+
 .icon-container{
     width: 80px;
     text-align: center;
@@ -85,12 +98,13 @@ p{
     }
 
     p{
-        font-size: 1.5vh;
+        font-size: clamp(0.7rem,1vw,1rem);
         text-align: center;
         color: white;
         text-shadow: 2px 2px 2px #000000;
     }
 }
+
 
 /*För att ta bort bakgrunden på meow knappen*/
 #spawnBtn{
@@ -160,7 +174,8 @@ p{
 
     h3{
         margin-right: 15px;
-        font-size: 1rem;
+        font-size:clamp(0.8rem,2vw,1.2rem);
+
         font-family:"tahoma", sans-serif;
         font-style: normal;
         text-align: center;
@@ -172,7 +187,7 @@ p{
         font-style: normal;
         color: black;
         text-align: center;
-        font-size: 1rem;
+        font-size: clamp(0.7rem,2vw,1rem);
     }
 
 /*contact*/
@@ -274,7 +289,6 @@ p{
         grid-template-columns: 80px 80px;
         row-gap: 100px;
         column-gap: 150px;
-        border: 0px solid black;
         
         img{
             width: clamp(90px, 5vw, 120px);
@@ -288,9 +302,6 @@ p{
     top:200px;
     left:300px;
 
-    #refIcons{
-        margin-bottom: -80px;
-    }
     img{
         width: 90px;
         margin-bottom: 20px;
@@ -304,7 +315,7 @@ p{
     }
     h4{
         font-family: "Press Start 2P", system-ui;
-        font-size: 12px;
+        font-size: clamp(0.6rem,1vw,0.8rem);
     }
 }
 
@@ -524,13 +535,13 @@ input[type=text],input[type=email],input[type=tel],select,textarea{
     cursor: pointer;
 
     h3{
-        font-size: 1.1rem;
+        font-size: clamp(0.8rem,1vw,1.1rem);
         color: #153677;
         text-align: left;
         margin-top: -80px;
     }
     p{
-        font-size: 0.9rem;
+        font-size: clamp(0.7rem,1vw,0.9rem);
         text-align: left;
         color: #153677;
         margin-top: -15px;
@@ -541,7 +552,7 @@ input[type=text],input[type=email],input[type=tel],select,textarea{
     }
 
 #weatherIcon{
-    width: clamp(100px, 5vw, 150px);
+    width: clamp(70px, 5vw, 150px);
 }
 
 /*för att gömma flik/window*/
@@ -553,38 +564,68 @@ input[type=text],input[type=email],input[type=tel],select,textarea{
 
 /*MOBILE ver*/
 @media (max-width:600px){
-    .desktop{
-        grid-template-columns: repeat(2, 1fr);
-    }
+   .icon-container{
+    grid-template-columns: repeat(2,90px);
+    justify-content: center;
+    gap:0px;
 
-   #about, #contact, #projects, #mail, #meow, #techstack, #references, #trashcan{
-    width: 350px;
-
-    left:120px;
-    top:120px;
+    margin-left: 30px;
    }
 
-   #references{
-    p{
-        font-size: 12px;
-    }
+   .window-container{
+    width: 90%;
+    height: auto;
+
+    top: 120px;
+    left: 50%;
+
+    transform: translateX(-50%);
    }
 
-   #cv{
-    top: 360px;
-    left: 140px;
-   }
+   /*Centrera fönster*/
+   #about, #contact, #projects, #mail, #references, #techstack, #trashcan{
+    left: 50%;
+    transform: translateX(-50%);
 
-    .projectImages{
-    column-gap:70px;
-    }
+    width: 300px;
+}
+#about{
+    height: 500px;
+}
 
-    .start-menu img{
-        width: 65px;
-    }
+#cv{
+    left: 50%;
+    transform: translateX(-50%); 
 
-    .icon-container p{
-        font-size: 15px;
-    }
+    width: 300px;
+}
 
+#mail{
+    top:10%;
+}
+
+#projects{
+    height: 350px;
+}
+.projectImages{
+    grid-template-columns: repeat(2,90px);
+    justify-content: center;
+    gap:50px;
+}
+
+.start-menu{
+    width: 100%;
+    height: 7%;
+}
+
+#navRef, #navMadeleine, #navAbout, #navContact, #navProj, #navEmail, #navTech{
+   width: 40px; 
+   height: 40px;
+   left: 50%;
+   transform: translateX(50%);
+}
+
+#weatherApp{
+    width: 150px;
+    height: 100px;
 }
