@@ -628,21 +628,4 @@ input[type=text],input[type=email],input[type=tel],select,textarea{
     width: 150px;
     height: 100px;
 }
-
-#cats{
-    width:200px;
-    height:200px;
-    top:10px;
-    left:10px;
-}
-
-/* #medusa{
-    top: -10px;
-    left:-10px;
-}
-
-#zinja{
-    top:10px;
-    left:10px;
-} */
 }
