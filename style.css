@@ -72,9 +72,8 @@ h3{
 p{
     color:black;
     font-family:"tahoma", sans-serif;
-    /* font-size: 13px;  */
+    font-size: 13px; 
 
-    font-size: clamp(0.7rem,1vw,2.5rem);
 }
 
 /*desktop icons*/
@@ -131,7 +130,7 @@ p{
 /*about me window placering*/
 #about{
     top:90px;
-    left: 100vh;
+    left: 80vh;
 }
 
 
@@ -277,7 +276,7 @@ p{
 
 /*PROJECTS*/
 #projects{
-    height: 500px;
+    height: 450px;
 }
 #projContainer{
     display: flex;
@@ -347,8 +346,8 @@ p{
 /*annan storlek på mail-window*/
 #mail{
     height: 500px;
-    top: 250px;
-    left: 950px;
+    top: 150px;
+    left: 800px;
 
     #mailContainer{
         display: flex;
@@ -427,8 +426,8 @@ input[type=text],input[type=email],input[type=tel],select,textarea{
 /*MEOW UPDATED VERSION*/
 .spawn-cats{
     position: absolute;
-    top:600px;
-    left:800px;
+    top:450px;
+    left:700px;
     width:200px;
     height:200px;
 
@@ -445,8 +444,8 @@ input[type=text],input[type=email],input[type=tel],select,textarea{
 #zinja{
     position: absolute;
     width: 150px;
-    top:-20%;
-    left:300%;
+    top:100px;
+    left:200%;
     opacity: 0;
 }
 
@@ -628,4 +627,22 @@ input[type=text],input[type=email],input[type=tel],select,textarea{
 #weatherApp{
     width: 150px;
     height: 100px;
+}
+
+#cats{
+    width:200px;
+    height:200px;
+    top:10px;
+    left:10px;
+}
+
+/* #medusa{
+    top: -10px;
+    left:-10px;
+}
+
+#zinja{
+    top:10px;
+    left:10px;
+} */
 }
