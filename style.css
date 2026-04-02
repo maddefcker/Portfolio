@@ -58,7 +58,6 @@ button{
     font-family: "Press Start 2P", system-ui;
     text-align: center;
     margin-top: 0%;
-
     font-size: clamp(0.9rem,2vw,1.3rem);
 }
 
@@ -276,21 +275,43 @@ p{
 
 /*PROJECTS*/
 #projects{
-    height: 450px;
+    height: 650px;
+    width: 600px;
 }
 #projContainer{
     display: flex;
     flex-direction: column;
+    
 }
     .projectImages{
         margin-top: 10px;
         display: grid;
-        grid-template-columns: 80px 80px;
+        grid-template-columns: 150px 100px;
         row-gap: 100px;
         column-gap: 150px;
         
         img{
-            width: clamp(90px, 5vw, 120px);
+            
+            /* padding: 10px; */
+            /* border: 5px solid black; */
+            background-size: contain;
+            /* width: clamp(90px, 5vw, 120px); */
+
+            width: clamp(250px, 5vw, 120px);
+        }
+    }
+
+    .imgContainer{
+        width: 220px;
+        border: 5px solid black;
+        padding-bottom: 50px;
+        padding: 10px 10px 50px;
+        text-align: center; 
+        background-color: rgb(220, 214, 197);
+
+        p{
+           font-family:"Press Start 2P", system-ui; 
+           font-size: clamp(0.9rem,1vw,0.8rem);
         }
     }
 
