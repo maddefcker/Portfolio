@@ -274,6 +274,10 @@ p{
 
 
 /*PROJECTS*/
+#textContainer{
+    margin-top: -5%;
+}
+
 #projects{
     height: 650px;
     width: 600px;
@@ -286,30 +290,28 @@ p{
     .projectImages{
         margin-top: 10px;
         display: grid;
-        grid-template-columns: 150px 100px;
-        row-gap: 100px;
-        column-gap: 150px;
+        grid-template-columns: 220px 220px;
+        row-gap: 10%;
+        column-gap: 8%;
+
+        width: 100%;
+        justify-content:center;
         
         img{
-            
-            /* padding: 10px; */
-            /* border: 5px solid black; */
-            background-size: contain;
-            /* width: clamp(90px, 5vw, 120px); */
-
-            width: clamp(250px, 5vw, 120px);
+            width: clamp(220px, 5vw, 120px);
         }
     }
 
     .imgContainer{
+        cursor: pointer;
         width: 220px;
-        border: 5px solid black;
-        padding-bottom: 50px;
-        padding: 10px 10px 50px;
-        text-align: center; 
+
+        padding-bottom: 20px;
         background-color: rgb(220, 214, 197);
+        box-shadow: 2px 2px 2px 2px #7e7e7e;
 
         p{
+            text-align: center;
            font-family:"Press Start 2P", system-ui; 
            font-size: clamp(0.9rem,1vw,0.8rem);
         }
