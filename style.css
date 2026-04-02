@@ -76,7 +76,6 @@ p{
 }
 
 /*desktop icons*/
-
 .icon-container{
     width: 80px;
     text-align: center;
@@ -150,7 +149,7 @@ p{
 }
 
 
-/*FIXA SENARE ? TILL COLUMN IST FÖR ROW ?container standard-layout*/
+
  .content-container{
     color: black;
     border: 0px solid white;
@@ -279,6 +278,7 @@ p{
 }
 
 #projects{
+    top:90px;
     height: 600px;
     width: 600px;
 }
