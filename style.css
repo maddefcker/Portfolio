@@ -576,7 +576,8 @@ input[type=text],input[type=email],input[type=tel],select,textarea{
     }
 
 #weatherIcon{
-    width: clamp(70px, 5vw, 150px);
+    margin-left: 20%;
+    width: clamp(230px, 5vw, 150px);
 }
 
 /*för att gömma flik/window*/
