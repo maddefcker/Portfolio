@@ -316,6 +316,9 @@ p{
            font-size: clamp(0.9rem,1vw,0.8rem);
         }
     }
+    a:link{
+        text-decoration: none;
+    }
 
 
 /*References container*/
